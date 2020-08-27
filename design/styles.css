@@ -174,3 +174,32 @@ body{
         -ms-transform: translateY(0);
     }
 }
+.share_icons>a+ a,
+.share_icons>span+ a {
+    margin-left: 1rem;
+}
+
+.share_icons>span:first-child {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    color: hsl(212, 23%, 69%);
+}
+
+.txt-hide{
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.icon-after::after{
+    position: absolute;
+    font-family: 'icomoon' !important;
+    font-size: 2.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
