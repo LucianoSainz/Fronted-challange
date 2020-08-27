@@ -26,7 +26,7 @@ body{
 }
 
 .article_img{
-    background-image: url('images/drawers.jpg');
+    background-image: url('../images/drawers.jpg');
     width: 285px;
     height: 290px;
     background-size: cover;
@@ -202,4 +202,35 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     color: #fff;
+}
+.icon-after{
+    transition: .5s all ease-out;
+}
+
+.icon-after:hover {
+    transform: scale(1.2);
+}
+
+.share_icons .fb::after{
+    content: "\e900";
+}
+
+.share_icons .twitter::after{
+    content: "\e903";
+}
+
+.share_icons .pinterest::after{
+    content: "\e901";
+}
+
+.share_icons::after {
+    content: "";
+    position: absolute;
+    border: 15px solid hsl(217, 19%, 35%);
+    bottom: -44px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
 }
